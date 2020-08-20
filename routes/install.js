@@ -5,7 +5,7 @@ module.exports = (app) => {
         var { folder } = req.body
 
         install.wordpress(folder, () => {
-            res.json({message: `Wordpress was installed in /var/www/${folder}.`})
+            res.json({ message: `Wordpress was installed in /var/www/${folder}.` })
         })
     })
 }

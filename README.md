@@ -1,101 +1,111 @@
 # `vhost`
+`vhost` helps you programitcally control your apache virtual hosts via the command-line (soon!) or a smart REST API.
 
+> NOTICE: `vhost` is in beta. Use at your own risk.
 
 ## Endpoints
 
 ### vhost
 
-- `/vhost/create`
-```
+* `/vhost/create`
+
+``` 
 {
     domain: '',
     template: 'basic',
 }
 ```
 
-- `/vhost/delete`
-- `/vhost/remove`
+* `/vhost/delete`
+* `/vhost/remove`
 
-```
+``` 
 {
     conf: ''
 }
 ```
 
-- `/vhost/list`
-- `/vhost/reload`
+* `/vhost/list`
+* `/vhost/reload`
 
 ### SSL
-- `/ssl/create`
-```
+
+* `/ssl/create`
+
+``` 
 {
     domain: ''
 }
 ```
 
 ### Install
-- `/install/wordpress`
-```
+
+* `/install/wordpress`
+
+``` 
 {
     folder: ''
 }
 ```
 
 ### Auto
-- `/auto/wordpress`
+
+* `/auto/wordpress`
+
+``` 
 {
     domain: '',
     folder: '',
 }
-
-
+```
 
 ## Functions
 
 ### vhost
 
-```js
+``` js
 vhost.list((list) => {})
 ```
 
-```js
+``` js
 vhost.create(data, callback)
 ```
-`data`
-- domain
-- ?template
 
-```js
+ `data`
+* domain
+* ?template
+
+``` js
 vhost.delete(conf, () => {})
 vhost.remove(conf, () => {})
 ```
 
-```js
+``` js
 vhost.enable(conf, (error) => {})
 ```
 
-```js
+``` js
 vhost.disable(conf, (error) => {})
 ```
 
-```js
+``` js
 vhost.reload(() => {})
 ```
 
 ### SSL
 
-```js
+``` js
 ssl.create(domain, (error) => {})
 ```
 
 ### Install
 
-```
+``` 
 install.wordpress(folder, (error) => {})
 ```
 
 ### Auto
 
-```
+``` 
 auto.wordpress(domain, folder, (error) => {})
 ```
