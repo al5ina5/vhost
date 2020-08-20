@@ -2,3 +2,5 @@ node_modules
 *.log
 backups/*
 _site
+.env
+.netlify
