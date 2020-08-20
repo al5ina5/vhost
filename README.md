@@ -3,4 +3,4 @@
 
 > NOTICE: `vhost` is in beta. Use at your own risk.
 
-### [Docs](/vhost.netlify.app)
+### [Docs](https://vhost.netlify.app)
