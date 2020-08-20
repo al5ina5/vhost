@@ -5,6 +5,8 @@
 
 ## Endpoints
 
+All endpoints must have `key` value sent for authentication. Therefore, they must all be POST'd to.
+
 ### vhost
 
 * `/vhost/create`
@@ -68,12 +70,11 @@ vhost.list((list) => {})
 ```
 
 ``` js
-vhost.create(data, callback)
+vhost.create({
+    domain: '',
+    template: 'basic'
+}, callback)
 ```
-
- `data`
-* domain
-* ?template
 
 ``` js
 vhost.delete(conf, () => {})
@@ -100,12 +101,12 @@ ssl.create(domain, (error) => {})
 
 ### Install
 
-``` 
+``` js
 install.wordpress(folder, (error) => {})
 ```
 
 ### Auto
 
-``` 
+``` js
 auto.wordpress(domain, folder, (error) => {})
 ```
