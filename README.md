@@ -73,7 +73,8 @@ vhost.list((list) => {})
 ``` js
 vhost.create({
     domain: '',
-    template: 'basic'
+    alias: '',
+    path: '',
 }, callback)
 ```
 
