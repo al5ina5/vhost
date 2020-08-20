@@ -3,4 +3,16 @@
 
 > NOTICE: `vhost` is in beta. Use at your own risk.
 
-### [Docs](/vhost.netlify.app)
+## Usage
+
+``` 
+const { vhost, ssl } = require('vhost')
+```
+
+## Reference
+
+[Functions &rarr; ](/functions)
+
+[Endpoints &rarr; ](/endpoints)
+
+[CLI &rarr; ](/cli)

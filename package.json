@@ -4,7 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --exec 'sudo node .'"
+    "dev": "nodemon --exec 'sudo node .'",
+    "docs-build": "textbase build",
+    "docs-start": "textbase start",
+    "docs-dev": "textbase"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -16,5 +19,8 @@
     "mysql": "^2.18.1",
     "public-ip": "^4.0.2",
     "shelljs": "^0.8.4"
+  },
+  "devDependencies": {
+    "textbase": "^1.0.0-beta.16"
   }
 }
