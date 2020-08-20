@@ -14,7 +14,8 @@ All endpoints must have `key` value sent for authentication. Therefore, they mus
 ``` 
 {
     domain: '',
-    template: 'basic',
+    alias: '',
+    path: '',
 }
 ```
 
